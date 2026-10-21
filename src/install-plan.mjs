@@ -26,7 +26,7 @@ export const SOURCE_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.u
 // The litellm pin itself is a security floor as much as a version: 1.95.0
 // required `cryptography>=48.0.1,<49.0`, which no patched cryptography can
 // satisfy (GHSA-g6cj-pr64-35w5 is fixed in 50.0.0). Do not move it back.
-export const PYTHON_REQUIREMENTS = ["litellm[proxy]==1.96.0", "fastapi==0.139.2"];
+export const PYTHON_REQUIREMENTS = ["litellm[proxy]==1.96.2", "fastapi==0.139.2"];
 
 // Pinning the two direct requirements left their whole transitive tree floating:
 // every install re-resolved `litellm[proxy]` against PyPI and executed whatever
